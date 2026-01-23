@@ -173,14 +173,15 @@ function changeVideoBackground(condition, temp, visibility) {
      if (temp <= 10) {
         videoUrl = "scene2_heavycold.mp4"; 
     }
-    else if (condition === 'Clouds') {
-     videoUrl = "scene8_clouds.mp4"; 
-    }
+    
     else if (condition === 'Rain' || condition === 'Drizzle') {
         videoUrl = "scene5_rain.mp4"; 
     }
     else if (condition === 'Thunderstorm') {
         videoUrl = "scene6_thunderstorm.mp4";
+    }
+        else if (condition === 'Clouds') {
+     videoUrl = "scene8_clouds.mp4"; 
     }
     // 2. PRIORITY 2: Mist, Fog, Haze
     else if (condition === 'Mist') {

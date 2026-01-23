@@ -174,7 +174,7 @@ function changeVideoBackground(condition, temp, visibility) {
         videoUrl = "scene2_heavycold.mp4"; 
     }
     
-    else if (condition === 'Rain' || condition === 'Drizzle') {
+    else if (condition === 'Light Rain' || condition === 'Rain' || condition === 'Drizzle') {
         videoUrl = "scene5_rain.mp4"; 
     }
     else if (condition === 'Thunderstorm') {

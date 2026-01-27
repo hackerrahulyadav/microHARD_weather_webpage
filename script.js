@@ -193,7 +193,7 @@ function changeVideoBackground(condition, temp, visibility) {
         videoUrl = "scene1_sunny.mp4";
     }
 
-    // console.log("Setting Video To:", videoUrl, "Condition:", condition, "Temp:", temp);
+ console.log("Setting Video To:", videoUrl, "Condition:", condition, "Temp:", temp);
 
     if (!source.src.includes(videoUrl)) {
         source.src = videoUrl;

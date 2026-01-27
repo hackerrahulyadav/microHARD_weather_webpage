@@ -168,17 +168,14 @@ function changeVideoBackground(condition, temp, visibility) {
     const source = document.getElementById("video-source");
     let videoUrl = "";
 
-    // 1. PRIORITY 1: temp
- 
-     if (temp <= 10) {
-        videoUrl = "scene2_heavycold.mp4"; 
-    }
-    
-    else if (condition === 'Light Rain' || condition === 'Rain' || condition === 'Drizzle') {
+    // 1. PRIORITY 1: rain
+  if (condition === 'Light Rain' || condition === 'Rain' || condition === 'Drizzle') {
         videoUrl = "scene5_rain.mp4"; 
     }
     else if (condition === 'Thunderstorm') {
         videoUrl = "scene6_thunderstorm.mp4";
+    }else if (temp <= 10) {
+        videoUrl = "scene2_heavycold.mp4"; 
     }
         else if (condition === 'Clouds') {
      videoUrl = "scene8_clouds.mp4"; 
